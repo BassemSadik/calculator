@@ -37,12 +37,14 @@
 <audio id="myaudio10">
   <source src="Yell+3.mp3" type="audio/mpeg">
 </audio>
-
-<audio id="myaudio21">
-    <source src="SCREAM_4.mp3" type="audio/mpeg">
+<audio id="myaudio111">
+  <source src="Yell+3.mp3" type="audio/mpeg">
 </audio>
 
 <!-- auudio 2-->
+<audio id="myaudio21">
+    <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
 <audio id="myaudio22">
   <source src="SCREAM_4.mp3" type="audio/mpeg">
 </audio>
@@ -61,9 +63,7 @@
 <audio id="myaudio27">
   <source src="SCREAM_4.mp3" type="audio/mpeg">
 </audio>
-<audio id="myaudio28">
-  <source src="SCREAM_4.mp3" type="audio/mpeg">
-</audio>
+
 
 <audio id="myaudio3">
         <source src="Applause.mp3" type="audio/mpeg">
@@ -131,10 +131,51 @@ h2{
   margin: 4px 2px;
 }
 
+.btn2 {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.btn3 {
+  background-color: rgba(220, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.btn4 {
+  background-color: rgba(10, 150, 10, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
 .btn:focus {
   background-color:rgb(200, 0, 255);
 }
 
+.btn2:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.btn3:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.btn4:focus {
+  background-color:rgb(200, 0, 255);
+}
 </style>
 </head>
 
@@ -147,30 +188,30 @@ h2{
 <div class="container">  
         <div class="item item-header">0</div>
  
-        <button class="btn" onclick="playsnd4()">AC</button>
-        <button class="btn" onclick="playsnd21()">+/-</button>
-        <button class="btn" onclick="playsnd22()">%</button>
-        <button class="btn" onclick="playsnd23()">÷</button>
+        <button class="btn3" onclick="playsnd4()">AC</button>
+        <button class="btn2" onclick="playsnd21()">+/-</button>
+        <button class="btn2" onclick="playsnd22()">%</button>
+        <button class="btn2" onclick="playsnd23()">÷</button>
 
         <button class="btn" onclick="playsnd17()">7</button>
         <button class="btn" onclick="playsnd18()">8</button>
         <button class="btn" onclick="playsnd19()">9</button>
-        <button class="btn" onclick="playsnd24()">x</button>
+        <button class="btn2" onclick="playsnd24()">x</button>
 
         <button class="btn" onclick="playsnd14()">4</button>
         <button class="btn" onclick="playsnd15()">5</button>
         <button class="btn" onclick="playsnd16()">6</button>
-        <button class="btn" onclick="playsnd25()">-</button>
+        <button class="btn2" onclick="playsnd25()">-</button>
         
         <button class="btn" onclick="playsnd11()">1</button>
         <button class="btn" onclick="playsnd12()">2</button>
         <button class="btn" onclick="playsnd13()">3</button>
-        <button class="btn" onclick="playsnd26()">+</button>
+        <button class="btn2" onclick="playsnd26()">+</button>
         
         <button class="btn" onclick="playsnd10()">0</button>
-        <button class="btn" onclick="playsnd27()">.</button>
-        <button class="btn" onclick="playsnd3()">Yay!</button>
-        <button class="btn" onclick="playsnd28()">=</button>
+        <button class="btn" onclick="playsnd111()">.</button>
+        <button class="btn4" onclick="playsnd3()">Yay!</button>
+        <button class="btn2" onclick="playsnd27()">=</button>
       </div>
 
       <script> 
@@ -224,6 +265,11 @@ h2{
                   snd10.play(); 
                   snd10.oncanplaythrough = function(){};
               } 
+              var snd111 = document.getElementById("myaudio111"); 
+                  function playsnd111() { 
+                  snd111.play(); 
+                  snd111.oncanplaythrough = function(){};
+              } 
 
             var snd21 = document.getElementById("myaudio21"); 
                   function playsnd21() { 
@@ -259,11 +305,6 @@ h2{
                   function playsnd27() { 
                   snd27.oncanplaythrough = function(){};
                   snd27.play(); 
-              } 
-              var snd28 = document.getElementById("myaudio28"); 
-                  function playsnd28() { 
-                  snd28.oncanplaythrough = function(){};
-                  snd28.play(); 
               } 
 
             var snd3 = document.getElementById("myaudio3"); 
