@@ -1,0 +1,151 @@
+<!Doctype html>
+<html>
+<head>
+<audio id ="myaudio" preload autoplay loop>
+  <source src="C:\Users\sadik\Desktop\stuff\coding\calculator\music.mp3" type="audio/mpeg">
+  <source src="music.mp3" type="audio/mpeg" preload autoplay loop>
+</audio>
+              
+<audio id="myaudio1">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="myaudio2">
+    <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="myaudio3">
+        <source src="Applause.mp3" type="audio/mpeg">
+    </audio>
+
+<audio id="myaudio4">
+     <source src="hellno.mp3" type="audio/mpeg">
+</audio>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    background-image: url("bg.png");
+  }
+
+h1{
+    color:white;
+    background-color: rgba(0, 0, 255, 0.884);
+    font-size: 30px;
+    padding: 3px 20px;
+    font-family: cursive;
+}
+
+h2{
+    color:brown;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.item-header {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  background-color: whitesmoke;
+  color: brown;
+  font-size: 50px;
+  text-align: right;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px;
+  justify-content: center;
+  grid-template-areas: 
+  "header header header header" 
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+;
+}
+
+.btn {
+  background-color: rgba(128, 87, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.btn:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- <script src="calculator.js"></script></script>  -->
+
+<h1 align="center"> Math Class </h1>
+
+<div class="container">  
+        <div class="item item-header">0</div>
+ 
+        <button class="btn" onclick="playsnd4()">AC</button>
+        <button class="btn" onclick="playsnd2()">+/-</button>
+        <button class="btn" onclick="playsnd2()">%</button>
+        <button class="btn" onclick="playsnd2()">÷</button>
+
+        <button class="btn" onclick="playsnd1()">7</button>
+        <button class="btn" onclick="playsnd1()">8</button>
+        <button class="btn" onclick="playsnd1()">9</button>
+        <button class="btn" onclick="playsnd2()">x</button>
+
+        <button class="btn" onclick="playsnd1()">4</button>
+        <button class="btn" onclick="playsnd1()">5</button>
+        <button class="btn" onclick="playsnd1()">6</button>
+        <button class="btn" onclick="playsnd2()">-</button>
+        
+        <button class="btn" onclick="playsnd1()">1</button>
+        <button class="btn" onclick="playsnd1()">2</button>
+        <button class="btn" onclick="playsnd1()">3</button>
+        <button class="btn" onclick="playsnd2()">+</button>
+        
+        <button class="btn" onclick="playsnd1()">0</button>
+        <button class="btn" onclick="playsnd3()">Yay!</button>
+        <button class="btn" onclick="playsnd1()">.</button>
+        <button class="btn" onclick="playsnd2()">=</button>
+      </div>
+
+      <script> 
+            var snd1 = document.getElementById("myaudio1"); 
+                  function playsnd1() { 
+                  snd1.play(); 
+              } 
+            
+              var snd2 = document.getElementById("myaudio2"); 
+                  function playsnd2() { 
+                  snd2.play(); 
+              } 
+
+            var snd3 = document.getElementById("myaudio3"); 
+                  function playsnd3() { 
+                  snd3.play(); 
+              } 
+            
+              var snd4 = document.getElementById("myaudio4"); 
+                  function playsnd4() { 
+                  snd4.play(); 
+              } 
+          </script> 
+
+<h2>Math has never been so funny</h2>
+
+</body>
+
+</html>
