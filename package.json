@@ -1,0 +1,36 @@
+{
+  "name": "screaming-calculator",
+  "version": "1.0.0",
+  "description": "A calculator that screams",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/coffee -c calculator.coffee",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BassemSadik/calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "math",
+    "funny",
+    "fcc"
+  ],
+  "author": "Bassem Sadik",
+  "contributors": [
+    "Adham El Banhawy"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BassemSadik/calculator/issues"
+  },
+  "homepage": "https://github.com/BassemSadik/calculator#readme",
+  "devDependencies": {
+    "coffeescript": "^2.3.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
