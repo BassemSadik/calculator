@@ -97,7 +97,7 @@ h2{
     text-align: center;
 }
 
-.item-header {
+.calculator_display {
   grid-area: header;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -107,7 +107,7 @@ h2{
   text-align: right;
 }
 
-.container {
+.calculator {
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px;
@@ -133,6 +133,76 @@ h2{
 }
 
 .operator {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.add {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.multiply {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.subtract {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.divide {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.clear {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.percent {
+  background-color: rgba(128, 15, 0, 0.993);
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  margin: 4px 2px;
+}
+
+.calculate {
   background-color: rgba(128, 15, 0, 0.993);
   border: none;
   color: white;
@@ -170,7 +240,35 @@ h2{
   background-color:rgb(200, 0, 255);
 }
 
+.clear:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.add:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.divide:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.multiply:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.subtract:focus {
+  background-color:rgb(200, 0, 255);
+}
+
 .btn3:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.decimal:focus {
+  background-color:rgb(200, 0, 255);
+}
+
+.calculate:focus {
   background-color:rgb(200, 0, 255);
 }
 
@@ -184,10 +282,10 @@ h2{
 
 <h1 align="center"> Math Class </h1>
 
-<div class="container">  
-        <div class="item item-header" id="currentValue">0</div>
+<div class="calculator">  
+        <div class="calculator_display">0</div>
  
-        <button class="btn3" onclick="playsnd4()">AC</button>
+        <button class="clear" onclick="playsnd4()">AC</button>
         <button class="btn2" onclick="playsnd21()">+/-</button>
         <button class="operator" id="modulus" onclick="playsnd22()">%</button>
         <button class="operator" id="divide" onclick="playsnd23()">÷</button>
@@ -208,7 +306,7 @@ h2{
         <button class="operator" id="plus" onclick="playsnd26()">+</button>
         
         <button class="btn" onclick="playsnd10()">0</button>
-        <button class="btn" onclick="playsnd111()">.</button>
+        <button class="decimal" onclick="playsnd111()">.</button>
         <button class="btn4" onclick="playsnd3()">Yay!</button>
         <button class="operator" id="equals" onclick="playsnd27()">=</button>
       </div>
