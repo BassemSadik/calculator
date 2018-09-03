@@ -1,0 +1,304 @@
+<!Doctype html>
+<html>
+<head>
+
+<audio id ="myaudio" preload autoplay loop>
+  <source src="C:\Users\sadik\Desktop\stuff\coding\calculator\music.mp3" type="audio/mpeg">
+  <source src="music.mp3" type="audio/mpeg" preload autoplay loop>
+</audio>
+
+<!-- limit -->
+<audio id="limit">
+  <source src="DUN.mp3" type="audio/mpeg">
+</audio>
+
+<!-- audio1-->
+<audio id="myaudio11">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio12">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio13">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio14">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio15">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio16">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio17">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio18">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio19">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio10">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio111">
+  <source src="Yell+3.mp3" type="audio/mpeg">
+</audio>
+
+<!-- auudio 2-->
+<audio id="myaudio21">
+    <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio22">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio23">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio24">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio25">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio26">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+<audio id="myaudio27">
+  <source src="SCREAM_4.mp3" type="audio/mpeg">
+</audio>
+
+<!-- audio3-->
+<audio id="myaudio3">
+        <source src="Applause.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- audio 4-->
+<audio id="myaudio4">
+     <source src="hellno.mp3" type="audio/mpeg">
+</audio>
+
+<!-- size adjustment -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    background-image: url("bg.png");
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+
+h1{
+    color:white;
+    background-color: rgba(0, 0, 255, 0.884);
+    font-size: 30px;
+    padding: 3px 20px;
+    font-family: cursive;
+}
+
+h2{
+    color:brown;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.calculator_display {
+  display: grid;
+  grid-template-rows: 70px;
+  background-color: whitesmoke;
+  width: 270px, center;
+  color: brown;
+  font-size: 50px;
+  justify-content: right;
+  text-align: right;
+  grid-area: header;
+  grid-template-areas: 
+  "header";
+}
+
+.calculator_keys {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-rows: 70px 70px;
+  justify-content: center;
+  grid-template-areas: 
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+  "btn btn btn btn"
+;
+}
+
+button{
+  border: none; 
+  color: white;
+  padding: 20px; 
+  text-align: center; 
+  font-size: 20px; 
+  margin: 4px 2px;
+}
+
+button:focus {
+  background-color:rgb(200, 0, 255);
+}
+</style>
+</head>
+
+<body onclick="playstart()">
+
+<h1 align="center"> Math Class </h1>
+
+<div id="calculator">  
+      <div class="calculator_display">0</div>
+
+      <div class="calculator_keys">
+        <button style="background-color: rgba(220, 15, 0, 0.993)" data-action="clear" onclick="playsnd4()">AC</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="swap" onclick="playsnd21()">+/-</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="percent" onclick="playsnd22()">%</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="divide" onclick="playsnd23()">/</button>
+
+        <button style="background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd17()">7</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd18()">8</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd19()">9</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="multiply" onclick="playsnd24()">x</button>
+
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd14()">4</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd15()">5</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd16()">6</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="subtract" onclick="playsnd25()">-</button>
+        
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd11()">1</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd12()">2</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd13()">3</button>
+        <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="add" onclick="playsnd26()">+</button>
+        
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" onclick="playsnd10()">0</button>
+        <button style="  background-color: rgba(128, 87, 0, 0.993)" data-action="decimal" onclick="playsnd111()">.</button>
+        <button style="background-color: rgba(10, 150, 10, 0.993)" onclick="playsnd3()">Yay!</button>
+         <button style="background-color: rgba(128, 20, 0, 0.993)" data-action="calculate" onclick="playsnd27()">=</button>
+      </div>
+    </div>
+
+      <script> 
+            var start = document.getElementById("myaudio"); 
+                  function playstart() { 
+                  start.play(); 
+                  start.oncanplaythrough = function(){};
+              } 
+            var snd11 = document.getElementById("myaudio11"); 
+                  function playsnd11() { 
+                  snd11.play(); 
+                  snd11.oncanplaythrough = function(){};
+              } 
+              var snd12 = document.getElementById("myaudio12"); 
+                  function playsnd12() { 
+                  snd12.play(); 
+                  snd12.oncanplaythrough = function(){};
+              } 
+              var snd13 = document.getElementById("myaudio13"); 
+                  function playsnd13() { 
+                  snd13.play(); 
+                  snd13.oncanplaythrough = function(){};
+              } 
+             var snd14 = document.getElementById("myaudio14"); 
+                  function playsnd14() { 
+                  snd14.play(); 
+                  snd14.oncanplaythrough = function(){};
+              } 
+             var snd15 = document.getElementById("myaudio15"); 
+                  function playsnd15() { 
+                  snd15.play(); 
+                  snd15.oncanplaythrough = function(){};
+              } 
+             var snd16 = document.getElementById("myaudio16"); 
+                  function playsnd16() { 
+                  snd16.play(); 
+                  snd16.oncanplaythrough = function(){};
+              } 
+             var snd17 = document.getElementById("myaudio17"); 
+                  function playsnd17() { 
+                  snd17.play(); 
+                  snd17.oncanplaythrough = function(){};
+              }
+              var snd18 = document.getElementById("myaudio18"); 
+                  function playsnd18() { 
+                  snd18.play(); 
+                  snd18.oncanplaythrough = function(){};
+              }
+              var snd19 = document.getElementById("myaudio19"); 
+                  function playsnd19() { 
+                  snd19.play(); 
+                  snd19.oncanplaythrough = function(){};
+              } 
+             var snd10 = document.getElementById("myaudio10"); 
+                  function playsnd10() { 
+                  snd10.play(); 
+                  snd10.oncanplaythrough = function(){};
+              } 
+              var snd111 = document.getElementById("myaudio111"); 
+                  function playsnd111() { 
+                  snd111.play(); 
+                  snd111.oncanplaythrough = function(){};
+              } 
+
+            var snd21 = document.getElementById("myaudio21"); 
+                  function playsnd21() { 
+                  snd21.oncanplaythrough = function(){};
+                  snd21.play(); 
+              } 
+              var snd22 = document.getElementById("myaudio22"); 
+                  function playsnd22() { 
+                  snd22.oncanplaythrough = function(){};
+                  snd22.play(); 
+              } 
+              var snd23 = document.getElementById("myaudio23"); 
+                  function playsnd23() { 
+                  snd23.oncanplaythrough = function(){};
+                  snd23.play(); 
+              } 
+              var snd24 = document.getElementById("myaudio24"); 
+                  function playsnd24() { 
+                  snd24.oncanplaythrough = function(){};
+                  snd24.play(); 
+              } 
+              var snd25 = document.getElementById("myaudio25"); 
+                  function playsnd25() { 
+                  snd25.oncanplaythrough = function(){};
+                  snd25.play(); 
+              } 
+              var snd26 = document.getElementById("myaudio26"); 
+                  function playsnd26() { 
+                  snd26.oncanplaythrough = function(){};
+                  snd26.play(); 
+              } 
+              var snd27 = document.getElementById("myaudio27"); 
+                  function playsnd27() { 
+                  snd27.oncanplaythrough = function(){};
+                  snd27.play(); 
+              } 
+
+            var snd3 = document.getElementById("myaudio3"); 
+                  function playsnd3() { 
+                  snd3.oncanplaythrough = function(){};
+                  snd3.play(); 
+              } 
+
+            var snd4 = document.getElementById("myaudio4"); 
+                  function playsnd4() { 
+                  snd4.oncanplaythrough = function(){};
+                  snd4.play(); 
+              } 
+          </script> 
+
+<script src="calculator2.js"></script>
+
+<h2>Math has never been so fun</h2>
+
+</body>
+
+</html>
